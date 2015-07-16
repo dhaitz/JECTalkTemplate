@@ -1,0 +1,86 @@
+ \documentclass[t]{beamer}
+\listfiles
+\renewcommand{\rmdefault}{phv} % Arial
+\renewcommand{\sfdefault}{phv} % Arial
+\mode<presentation>
+{
+  \usetheme[english,titlepage0]{KIT}
+  \setbeamercovered{transparent}
+  \setbeamertemplate{enumerate items}[ball]
+}
+\usepackage{babel}
+\newlength{\Ku}
+\setlength{\Ku}{1.43375pt}
+\usepackage[latin1]{inputenc}
+\usepackage[TS1,T1]{fontenc}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage{xspace}
+
+\title[]{Z$\rightarrow\mu\mu$+jet Studies}
+\subtitle{Dominik Haitz, Joram Berger, G\"unter Quast \\ \today}
+\author[]{Dominik Haitz}
+
+\institute{Institut f\"ur experimentelle Kernphysik (EKP)}
+\AuthorTitleSep{\relax}
+\institute[]{INSTITUT F\"UR EXPERIMENTELLE KERNPHYSIK (EKP)}
+\logo{\includegraphics[height=20mm]{images/CMS-Color}}
+\TitleImage[width=\titleimagewd]{images/CMS-title-cropped}
+ 
+\newlength{\tmplen}
+
+\newcommand{\verysmall}{\fontsize{6pt}{8.6pt}\selectfont}
+\newcommand{\zpt}{\ensuremath{p_{\mathrm{T}}^{\mathrm{Z}}}\xspace}
+\newcommand{\pt}{\ensuremath{p_{\mathrm{T}}}\xspace}
+
+\newcommand{\plotdir}{/disks/ekpwww/web/dhaitz/public_html/plots_archive/2015_07_16/jec_plots}
+
+\begin{document}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}
+  \frametitle{Today's Talk: ...}
+ \begin{itemize}
+  \item First item of today
+ \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Technical Details}
+  \begin{itemize}
+    \item New skim with \textbf{CMSSW 5.3.9}
+     \item Data: ReReco 22Jan13 2012A,B,C,D GT:  FT53\_V21A\_AN6
+     \item MC:  Madgraph DY  GT: START53\_V27\\ \
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+ \frametitle{\zpt}
+    \begin{figure}[h]
+      \def\MyWidth{0.5\textwidth}
+      \includegraphics[width=\MyWidth]
+	{\plotdir/zpt}
+    \end{figure}
+\end{frame} 
+
+
+\begin{frame} 
+  \frametitle{Conclusion}
+  \begin{itemize}
+   \item My conclusion
+  \end{itemize}
+\end{frame}
+
+
+\include{includes/backup}
+\include{includes/settings}
+\include{includes/cuts}
+
+\end{document}
+
